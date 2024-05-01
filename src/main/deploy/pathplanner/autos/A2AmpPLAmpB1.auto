@@ -1,0 +1,104 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 1.55,
+      "y": 7.3
+    },
+    "rotation": -90.0
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "path",
+          "data": {
+            "pathName": "A2AmpPLAmpB1_1"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "elevatorUp"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "amp"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "ampOff"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "elevatorDown"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "A2AmpPLAmpB1_2"
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "intakeAmp"
+                }
+              },
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "A2AmpPLAmpB1_3"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "A2AmpPlAmpB2_4"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "elevatorUp"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "amp"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "ampOff"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "elevatorDown"
+          }
+        }
+      ]
+    }
+  },
+  "folder": "PathPlanner",
+  "choreoAuto": false
+}

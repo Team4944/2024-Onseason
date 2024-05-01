@@ -1,0 +1,62 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 1.33,
+      "y": 5.55
+    },
+    "rotation": 180.0
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "named",
+          "data": {
+            "name": "shootSub"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "S2ShootPLShootA2_1"
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "intakeShooter"
+                }
+              },
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "S2ShootPLShootA2_2"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "S2ShootPLShootA2_3"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "shootSub"
+          }
+        }
+      ]
+    }
+  },
+  "folder": "PathPlanner",
+  "choreoAuto": false
+}

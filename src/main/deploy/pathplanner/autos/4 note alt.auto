@@ -1,0 +1,136 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 1.33,
+      "y": 5.55
+    },
+    "rotation": 180.0
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "named",
+          "data": {
+            "name": "shootSub"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "L4ShootPLShootA3ShootA2ShootA1_4"
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "intakeShooter"
+                }
+              },
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "L4ShootPLShootA3ShootA2ShootA1_5"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "L4ShootPLShootA3ShootA2ShootA1_6"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "shootSub"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Copy of L4ShootPLShootA3ShootA2ShootA1_1"
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "intakeShooter"
+                }
+              },
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "L4ShootPLShootA3ShootA2ShootA1_2"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "L4ShootPLShootA3ShootA2ShootA1_3"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "shootSub"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "L4ShootPLShootA3ShootA2ShootA1_7"
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "intakeShooter"
+                }
+              },
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "L4ShootPLShootA3ShootA2ShootA1_8"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "New Path"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "shootSub"
+          }
+        }
+      ]
+    }
+  },
+  "folder": "PathPlanner",
+  "choreoAuto": false
+}
