@@ -1,6 +1,6 @@
 # 2024 Onseason
 
-![Robot Image](20230420165309_IMG_2225.PNG)
+![Robot Image](src/main/deploy/20230420165309_IMG_2225.PNG)
 
 ---
 
